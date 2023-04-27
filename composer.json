@@ -1,0 +1,59 @@
+{
+  "name": "juststeveking/laravel-business-process",
+  "description": "Laravel Business Process is a simple and clean way to run business process using a Laravel Pipeline, in a structured and type-safe way.",
+  "license": "MIT",
+  "authors": [
+    {
+      "role": "Developer",
+      "name": "Steve McDougall",
+      "email": "juststevemcd@gmail.com",
+      "homepage": "https://www.juststeveking.uk/"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "JustSteveKing\\BusinessProcess\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JustSteveKing\\BusinessProcess\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.2"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.9",
+    "orchestra/testbench": "^8.5",
+    "pestphp/pest": "^2.5.2",
+    "phpstan/phpstan": "^1.10.14"
+  },
+  "scripts": {
+    "pint": [
+      "./vendor/bin/pint"
+    ],
+    "stan": [
+      "./vendor/bin/phpstan analyse"
+    ],
+    "test": [
+      "./vendor/bin/pest"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "JustSteveKing\\BusinessProcess\\Providers\\PackageServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
