@@ -20,6 +20,8 @@
 
 Laravel Business Process is a simple and clean way to run business process using a Laravel Pipeline, in a structured and type-safe way.
 
+This package is inspired by the tutorial I wrote for Laravel News [Going Past Actions in Laravel](https://laravel-news.com/going-past-actions-in-laravel).
+
 ## Installation
 
 ```shell
